@@ -286,7 +286,7 @@ body{
     color: #a8c080;
 }
 .pictures{
-    width: 1200px;
+    width: 100%;
     /* justify-content: center; */
     height: 750px;
     display: grid;
@@ -1060,28 +1060,309 @@ cursor: pointer;
     }
     .resume_photo div img{
         width: 95%;
+    }
+
+    .clients{
+        width: 100vw;
+        margin-top: -100px;
+        font-size: 40px;
+        height: 1200px;
+        padding-top: 60px;
+    }
+    .client_testimonial{
+        width: 90%;
+        flex-wrap: wrap ;
+        justify-content: center;
+        margin-left: -30px;
+        gap:100px;
+         font-size: 15px;
+        
+    }
+
+    .first_person .comment{
+       
+        width: 60%;
+        height: max-content;
+    }
+    .second_person{
+        margin-top: -50px;
+        margin-bottom: 100px ;
+    }
+    .second_person .comment{
+        width: 60%;
+        height: max-content;
+    }
+    .three_person{
+        
+        margin-bottom: 60px ;
+        
+    }
+    .four_person{
+         margin-top: -100px ;
+    }
+    .three_person .comment{
+        width: 60%;
+        height: max-content;
+    }
+    .four_person .comment{
+        width: 60%;
+        height: max-content;
+    }
+    .medium span{
+        
+        font-size: 30px;
+        display: flex;
+    }
+    .medium{
+        
+        margin: 0;
+        width: 90%;
+    }
+    .read_medium3{
+        justify-content: left;
+        width: 100vw;
+    }
+
+    .contact-form .row{
+        
+        width: 100vw;
+    }
+    .contact-wrapper {
+        margin-left: -20px;
+        /* padding-left: 0; */
+        /* border: black 1px solid; */
+        flex-wrap: wrap;
+        width: 100vw;
+        
+    }
+    .contact-info h3{
+        
+        font-size: 30px;   
+    }
+    .contact-info p{
+        font-size: 25px;        
+    }
+    .line{
+        padding-left: 10px;
+        width: max-content;
+         height: max-content;
+         color: #444;
+        
+    }
+    
+    .lines{
+        /* padding-left: 10px; */
+        width: 90%;
+        padding-top: 30px;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .footer-col{
+        height: max-content;
+    }
+    .footer-col h4{
+        /* padding-left: 10px; */
+        height: max-content;
+    }
+    .footer-col p{
+        width: 90%;
+        padding-left: 10px;
+    }
+    .socials{padding-left: 10px;}
+    .inline{
+        color: #6c757d;
+        justify-content: left;
+        text-align: center;
+        width: 80%;
+        margin-left: -20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1209px){
+    .first .Home, .first .Dropdown, .first .About, .first .Portfolio, .first .Services, .first .Resume, .first .Contact ,.first  .Blog{
+        opacity: 0;
+        
+    }
+    .photo{
+        /* overflow: hidden; */
+        width: 100vw;
+        height: 100vh;
+        /* border: #000 10px solid; */
+        
+    }
+    .photo .myimg{
+        
+        background-image: url(./img/photo.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        /* border: #000 1PX solid; */
+         background-position: center;
+         background-size: cover;
+         
+    }
+    .first{
+        /* border: black 1px solid ; */
+        width: 100vw;
+    }
+    .first .fm{
+        opacity: 1;
+        top: 50%;
+        left: 2%;
+        font-size: 40px;
+    }
+    .first .menu{
+        opacity: 1;
+        top: 50%;
+        right: 5%;
+        font-size: 40px;
+    }
+    .photo img{
+        opacity: 0;
+    }
+    .photo 
+    .hello{
+        width: 100%;   
+        font-size: 39px;
+        
+    }   
+    .hello span{
+        top: 160%;
+        width: 100%;
+        font-size: 25px;
+        
+    } 
+    .aboutMe {
+        justify-content: left;
+
+        flex-wrap: wrap;
+        width: 95%;
+        height: max-content;
+        /* border: black 1px solid ; */
+    }
+    .dot-grid{
+        /* top: 5%; */
+        right: 5%;
+        background-image: radial-gradient(#ccc 3px, transparent 3px);
+        background-size: 35px 35px;
+    }
+  .aboutMe .aboutMe_photo{
+    /* border: black 1px solid ; */
+    left: 20px;
+    width: 100%;
+    height: 100%;
+  }
+    .aboutMe .aboutMe_words img{
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+    .aboutMe_heading{
+        margin-left: 10px;
+        font-size: 60px;
+        
+        /* text-align: left; */
+    }
+    .aboutMe_text1{
+        margin-left: 10px;
+        width: 95%;
+        height: max-content;
+        font-size: 19px;
+    }
+    .skill{
+        padding-left: 10px;
+        width: 90%;
+        height: max-content;
+    }
+    .aboutMe_words{
+        width: 100%;
+        height: max-content;
+    }
+    .skill .skill-title{
+        font-size: 25px;
+    }
+    .my_portfolio_title{
+        margin-top: 100px;
+    }
+    .my_portfolio_2title{
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    .pictures{
+    width: 95%;
+    /* justify-content: center; */
+    height: max-content;
+    display: grid;
+    grid-template-areas: 
+    "picture1 picture4 picture6"
+    "picture2 picture4 picture6"
+    "picture3 picture5 picture7";
+    gap: 30px;
+    margin: 0   auto;
+    justify-content: center;
+    }
+    .picture1, .picture2, .picture3, .picture4, .picture5, .picture6, .picture7{
+        margin-left: 10px;
+        width: max-content;
+        height: 200px;
+    }
+    .picture4, .picture6{
+        height: 400px;
+    }
+    .services3{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .resume_photo { 
+        margin-left: 10px;
+        width: 80%;
+        height:100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    
+    .resume_photo .img{
+        display: flex;
+        justify-content: center;
+        /* left: 50%; */
+        transform: translateX(-10%);
+        width: 100vw;
+        height:max-content;
+        /* border:black 1px solid; */
+
+    }
+    .resume_photo .img img{
+        width: 100%;
         height: max-content;
         object-fit: cover;
-        margin-left: -55px;
+        /* transition: x;  */
+        
+        /* margin-left: -55px; */
     }
     .work_Exp{
-        
+        justify-content: center;
         height: max-content;
-        width: 90%;
+        width: 100%;
         margin: 10px;
-         /* border: #000 1px solid; */
-        /* margin-left: 10px; */
     }
+
     hr{
         width: 80%;
     }
-    .wex{
-       
-        width: 80%;
+    /* .work_Exp */
+    .work_Exp .wex p{
+
+       border: #000 1px solid;
+        width: 100%;
+        font-size: 25px;
         height: max-content;
     }
     .wex p span{
-        width: 80%;
+        width: 100%;
         /* padding-left: -100px; */
     }
 
@@ -1201,4 +1482,5 @@ cursor: pointer;
         width: 80%;
         margin-left: -20px;
     }
+    
 }
